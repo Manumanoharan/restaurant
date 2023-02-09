@@ -424,6 +424,23 @@ nav
     
     </div>
     </div>
+                  <button id="cta-arrow" onclick="topFunction()"> <i class="icofont-arrow-up" style="font-size: 45px;"></i></button>
+    <script>
+        var mybutton=document.getElementById("cta-arrow")
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+        function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
 </body>
 
 </html>
